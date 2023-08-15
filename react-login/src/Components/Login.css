@@ -4,3 +4,33 @@
   justify-content: center;
   align-items: center;
 }
+
+.login_wrapper label p {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.login_wrapper input {
+  border: transparent;
+  width: 360px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background-color: #f0edff;
+}
+
+.login_wrapper .login-btn {
+  text-align: center;
+}
+
+.login_wrapper button {
+  width: 200px;
+  border-radius: 16px;
+  padding: 16px;
+  outline: none;
+  border: transparent;
+  margin-top: 16px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #9181f4, #5038ed);
+  color: #fff;
+  font-weight: 800;
+}

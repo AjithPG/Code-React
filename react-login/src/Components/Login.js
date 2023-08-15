@@ -17,6 +17,7 @@ const Login = ({ setToken }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const token = await loginUser({
       username,
       password,
@@ -31,16 +32,23 @@ const Login = ({ setToken }) => {
       <form onSubmit={handleSubmit}>
         <label>
           <p>Username</p>
-          <input type="text" onChange={(e) => setUsername(e.target.value)} />
+          <input
+            type="text"
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
         </label>
         <label>
           <p>Password</p>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </label>
-        <button type="submit">Submit</button>
+        <div className="login-btn">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );

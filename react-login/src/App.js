@@ -13,10 +13,9 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h2>Application</h2>
       <BrowserRouter>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/preferences" element={<Preferences />} />
         </Routes>
       </BrowserRouter>
